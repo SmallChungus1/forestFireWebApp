@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Model</title>
+</head>
+<body>
+    <div class = "headerBar">
+        <form action="/" method="get">
+            <button id="ToModelBtn">Back To Home</button>
+        </form>
+    </div>
+    <div class="homePageDivs" id="sourceCode">
+        <h3><a href="https://github.com/SmallChungus1/ForestFireDetector/tree/main">Code for the Model</a></h3>
+     </div>   
+ <div class="homePageDivs" id="modelPerformance">
+    <h3>Model Performance on test dataset</h3>
+    <h4>Model Prediction Accuracy: 90%</h4>
+    <p>Confusion Matrix:</p>
+    <img src="/static/forestFireConfusionMatrix.png">
+ </div>   
+ <div class="homePageDivs" id="modelArchitecture">
+    <h3>Model Architecture</h3>
+    <h4>Used Keras to Implemented the VGG16 Architecture, with 2 nodes at the output layer to tailor to the binary classification task</h4>
+    <img src="/static/forestFireModelArchitecture.JPG">
+ </div>   
+
+ <div class="homePageDivs" id="dataSetSource">
+    <h3>Model training results:</h3>
+    <img src="/static/forestFireFinalEpochs.JPG">
+ </div>
+
+ <div class="homePageDivs" id="limtationSection">
+    <h3>Model Limitations:</h3>
+    <h4>The training data set only contains images of trees/forests not on fire. Inputting any images that is not a tree that is not on fire, like cars and planes, the model may falsely predict "fire". Could train on a more diverse dataset to obtain better predictions</h4>
+    
+ </div>   
+ <div class="homePageDivs" id="dataSetSource">
+    <h3>Data Set</h3>
+    <ul>
+        <li><h4><a href="https://github.com/SmallChungus1/ForestFireData">Cleaned up, balanced dataset used in the model training</a></h4></li>
+        <li><h4><a href="https://www.kaggle.com/datasets/mohnishsaiprasad/forest-fire-images/data">Original Data Set from Kaggle</a></h4></li>
+    </ul>
+ </div>   
+
+ 
+</body>
+</html>
